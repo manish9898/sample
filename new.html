@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+   <p>Hello <input id="hellotest" type="mick Musa" value="Kamal"></p>
+   <button type="button">Click Here</button>
+
+   <p id="demo">lsdfklsjfjlfjs</p>
+   <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Here</button>
+
+   <p id="nameId"> Name: </p>
+
+<p id="denoName"></p>
+
+   <p id="demoCar"></p>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+      // $(document).ready(function () {
+      //    $("button").click(function () {
+      //       alert("Only Test:" + $("#hellotest").val());
+      //    });
+      // });
+
+      // document.getElementById('nameId').innerHTML = "Hello Pankaj";
+
+      const car = {
+         firstName: "Fiat",
+         model: 2021,
+         carColor: "Red",
+         carAge: 20,
+      }
+
+
+      document.getElementById("demoCar").innerHTML = car.firstName + " is " + car.model + car.carAge + car.carColor ;
+
+
+
+      let firstName = "manish";
+      let lastName = "Arora";
+
+      let fullName = `welcome ${firstName} Hello Last Name ${lastName}`;
+
+      document.getElementById('denoName').innerHTML = fullName;
+
+
+
+   </script>
+</body>
+
+</html>
